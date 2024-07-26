@@ -1,0 +1,130 @@
+/* HTML element */
+html {
+    font-size: 20px; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color:#bceaef;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: greenyellow;
+    padding: 2em;
+    margin: 0rem 1rem 0rem 1rem;
+    border: solid 3px #fffdfc;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav li a {
+    padding: 1em;
+    text-decoration: none;
+    color: #333;
+    background: #000;
+    border: solid 2px #fffdfc;
+    color: #ffff;
+}
+
+nav li a:hover {
+    color: #007bff;
+}
+
+/* Section styles */
+.structural {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem; 
+}
+
+/* H1 styles */
+h1 {
+    font-size: 2.5rem; 
+}
+
+/* Section ruleset */
+.structural {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* Main styles */
+main {
+    flex: 2 1 70%;
+    gap: 1rem; 
+    background-color: rgb(135, 185, 214);
+    padding: 1em;
+    margin: 0rem ;
+    border: solid 3px #fffdfc;
+
+}
+
+/* Aside styles */
+aside {
+    flex: 1 1 30%;
+    background-color: rgb(236, 122, 221);
+    padding: 1em;
+    margin: 0rem;
+    border: solid 3px #fffdfc;
+}
+
+#gallery {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+}
+
+/* Figure styles for Gallery */
+#gallery figure {
+    border: 1px solid #ccc; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+#gallery img {
+    width: 80%; /* Size images to 80% width */
+    height: 80%; /* Size images to 80% height */
+  
+}
+figcaption
+{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    padding: 1em;
+    margin: 0rem 1rem 0rem 1rem;
+    border: solid 3px #fffdfc;
+}
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    html {
+        font-size: 10px; 
+    }
+
+    .structural {
+        flex-direction: column; 
+    }
+
+    main {
+        grid-template-columns: 1fr; 
+    }
+}
